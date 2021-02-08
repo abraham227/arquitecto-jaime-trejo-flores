@@ -1,0 +1,167 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+:root {
+
+	--purple-dark: #F97A0B;
+	--purple-medium: #F7A257;
+	--purple-light: #FFBE85;
+	--gray-light: #eaeaea;
+	--white: #f4fffd;
+}
+
+body{
+	font-size: 20px;
+	font-family: "Open Sans", sans-serif;
+}
+
+p{
+	font-size: 22px;
+}
+
+
+
+/*Nav Bar*/
+
+
+.menu{
+	background-color: var(--purple-medium);
+	width: 100%;
+	position: sticky;
+	top: 0;
+	padding: 5px;
+	z-index: 999;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	font-family: "Noto Serif", serif;
+	font-style: italic;
+	margin-bottom: 60px; 
+
+}
+
+.menu a {
+	display: inline-block;
+	padding: 10px 30px;
+	font-size: 26px;
+	background-color: var(--purple-medium);
+	margin: 0 10px;
+	transition: .5s ease all;
+	color: var(--gray-light);
+	text-decoration: none;
+}
+.menu a:hover{
+	transform: translateY(18px);
+	background-color: var(--purple-light);
+}
+
+/*Nosotros*/
+
+.nosotros{
+	margin-bottom: 60px;
+}
+
+.subtitulo{
+	font-size: 20px;
+	color: var(--purple-dark);
+	font-family: "Noto Serif", serif;
+	font-weight: 700;
+	z-index: 2;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.subtitulo span{
+ 	background-color: var(--gray-light);
+ 	padding: 0px 15px;
+ 	z-index: 99;
+ 	position:relative;
+}
+
+.subtitulo:after{
+	content: "";
+	display: inline-block;
+	height: 2px;
+	width: 100%;
+	background-color: var(--purple-dark);
+	position: relative;
+	top:-29px;
+	z-index: 1;
+}
+
+.nosotros .titulo{
+	width: 70%;
+	font-size: 44px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+
+.contacto{
+	margin-bottom: 60px;
+}
+
+
+.redes-sociales {
+	padding: 10px;
+	background-color: var(--purple-light);
+}
+
+.redes-sociales img{
+	padding: 5px;
+	border-radius: 100%;
+	width: 50px;
+	transition: .3s ease all;
+}
+
+.redes-sociales img:hover{
+	transform: scale(1.2);
+}
+
+
+@media screen and (max-width:992px){
+	p{
+		font-size: 18px;
+	}
+
+	.content-header .text {
+		font-size: 60px;
+	}
+
+	.menu a{
+		font-size: 20px;
+	}
+
+	.nosotros .titulo,
+	.servicios .titulo {
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width:992px){
+	p{
+		font-size: 16px;
+	}
+
+	.content-header .text {
+		font-size: 58px;
+	}
+
+	.menu a{
+		font-size: 18px;
+	}
+
+	.nosotros .titulo,
+	.servicios .titulo {
+		font-size: 30px;
+	}
+}
+
+
